@@ -1,0 +1,90 @@
+$font: 'Quicksand', sans-serif;
+$color1: #00ACC1;
+$color2: darkred;
+$color3: #fff;
+$color4: #9E9E9E;
+$color5: #00bdd5;
+
+h2 {
+	font-family: $font;
+}
+
+h3 {
+	font-family: $font;
+	color: $color1;
+}
+
+p {
+	font-family: $font;
+}
+
+.content {
+	grid-column: 3;
+	grid-row: 2;
+	max-width: 1000px;
+	font-family: $font;
+	flex-basis: 70%;
+	padding-top: 5vw;
+}
+
+.frow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 10px;
+	justify-content: space-evenly;
+}
+
+.fcol1 {
+	font-weight: bold;
+	flex-basis: 20%;
+	padding-left: 20px;
+}
+
+.fcol2 {
+	flex-basis: 70%;
+}
+
+.req {
+	font-size: 24px;
+	font-weight: bold;
+	color: $color2;
+}
+
+footer {
+	grid-column: span 4;
+	grid-row: 3;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  border: 0px;
+  box-shadow: 0px 1px 15px #666;
+  background: $color3;
+}
+
+.footer-text {
+  font-family: $font;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $color1;
+	text-align: center;
+	padding: 10px;
+
+}
+
+.fdiv {
+	display: inline;
+}
+
+.lines {
+  font-weight: 400;
+  color: $color4;
+}
+
+.sep {
+	border: 1px solid $color5;
+  box-shadow: 2px 2px 2px $color3;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}

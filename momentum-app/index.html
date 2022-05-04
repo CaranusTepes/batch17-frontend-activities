@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Momentum App</title>
+</head>
+<body>
+  <div class="container"> </div>
+    <div class="profiles">
+      <div class="name"> 
+        <div class="image"> 
+          <img src="4.png">
+        </div>
+        <div class="greet">
+          <h1>
+            <span id="greeting"></span>
+            <span id="name" contenteditable="true"></span>
+          </h1>
+        </div>
+      </div>
+      <div class="quoters"> 
+        
+        <div class="mark">
+          <div class="forthebutton"> 
+            <input type="image" src="6.png" onclick="initialize_generate()" class="buttonquote">
+          </div>
+          <div class="quoteContainer">
+            <p class="quote"><i> “The big lesson in life, baby, is never be scared of anyone or anything.”</i><br><b> - Frank Sinatra</b></p>
+          </div>
+        </div>
+        <div class="time">
+          <h1> It is currently</h1>
+          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        </div>
+      </div>
+    </div>
+    <div class="todo">
+      <div class="main">
+        <h2>TODAY: </h2>
+        <h2 id="focus" contenteditable="true"></h2>
+      </div>
+      <div class="list">
+        <div class="containered">
+          <form  action="#">
+            <input type="text" name="item" id="item" placeholder="Add New" />
+          </form>  
+        <ul id="list"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="weather">
+      <img src="Cloudy.png" alt="cloudy" class="cloud">
+      <img src="Rainy.png" alt="cloudy" class="rainy">
+      <img src="Suuny.png" alt="cloudy" class="sunny">
+      <img src="Stormy.png" alt="cloudy" class="stormy">
+    </div>
+    <div class="calendarholder">
+      <div id="calendar" class="calendar"></div>
+    </div> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+</body>
+<script src="index.js"></script>
+</html>

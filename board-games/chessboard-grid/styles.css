@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.refresh {
+  position: absolute;
+  color: #111;
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+}
+
+.grid-container{
+  height: 800px;
+  width: 800px;
+  box-shadow: 3px #111111;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);  
+  border: solid rgb(63, 62, 62) 15px;
+}
+.item{
+  display: grid;
+  place-items: center;
+  font-size: 55px;
+}
+
+.main .grid-container .one:nth-child(odd), .main .grid-container .three:nth-child(odd), .main .grid-container .five:nth-child(odd), .main .grid-container .seven:nth-child(odd) {
+  background-color: grey;
+}
+.main .grid-container .one:nth-child(even), .main .grid-container .three:nth-child(even), .main .grid-container .five:nth-child(even), .main .grid-container .seven:nth-child(even) {
+  background-color: white;
+}
+.main .grid-container .two:nth-child(even), .main .grid-container .four:nth-child(even), .main .grid-container .six:nth-child(even), .main .grid-container .eight:nth-child(even) {
+  background-color: grey;
+}
+.main .grid-container .two:nth-child(odd), .main .grid-container .four:nth-child(odd), .main .grid-container .six:nth-child(odd), .main .grid-container .eight:nth-child(odd) {
+  background-color: white;
+}
+
+/** HARRY POTTER MOVEMENTS **/
+
+#pawn1 {
+  position: relative;
+  animation: mymove 2s 1 forwards;
+  font-size: 55px;
+}
+
+#pawn2 {
+  position: relative;
+  animation: mymove2 2s 1 forwards;
+  font-size: 55px;
+  animation-delay: 2s;
+}
+
+#pawn3 {
+  position: relative;
+  animation: mymove3 2s 1 forwards;
+  font-size: 55px;
+  animation-delay: 4s;
+}
+
+#pawn4 {
+  position: relative;
+  animation: mymove4 2s 1 forwards;
+  font-size: 55px;
+  animation-delay: 6s;
+}
+
+#checkmate {
+  position: relative;
+  animation: mymove5 2s 1 forwards;
+  font-size: 55px;
+  animation-delay: 8s;
+}
+
+#item11{
+  display:grid;
+  justify-content: center;
+  background-color: grey;
+  align-items: center;
+  font-size: 55px;
+  position: relative;
+  animation: mymove6 0.5s 1 forwards;
+  animation-delay: 10s;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 193px;}
+}
+@keyframes mymove2 {
+  from {bottom: 0px;}
+  to {bottom:100px}
+}
+@keyframes mymove3 {
+  from {top: 0px;}
+  to {top: 193px;}
+}
+@keyframes mymove4 {
+  from {bottom: 0px;}
+  to {bottom:200px}
+}
+@keyframes mymove5 {
+  from {top: 0px}
+  to {transform: translate(-400px, 400px);} /**diagonal harry potter T-T**/
+}
+@keyframes mymove6 {
+  from {background-color: #fff;}
+  to {background-color: red;}
+}
+
+@media (max-width: 768px) {
+  .main .grid-container {
+    width: 50vw;
+    height: 50vw;
+  }
+  .main .grid-container .item {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 550px) {
+  .main .grid-container {
+    width: 320px;
+    height: 320px;
+  }
+  .main .grid-container .item {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="./output.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+	 </style>
+</head>
+<body>
+		<div class="container" id="top">
+
+			<!----header---->
+			<header>
+				<h1 id="title"> Yumang Corp. </h1>
+				<div class="nav-top">
+					<a href="#menu" class="menu">&#9776;</a>
+					<button id="login" class="login">log in</button> <button id="signup" class="signup">sign up</button>
+				</div>
+			</header>
+			
+			<!----nav bar---->
+      <nav class="nav" id="menu">
+          <button class="nav-item"><span>Solutions </span></button>
+          <button class="nav-item"><span>Products </span></button>
+          <button class="nav-item"><span>Pricing </span></button>
+          <button class="nav-item"><span>Partners </span></button>
+				<hr class="nav-hr">
+          <button class="nav-item2"><span>About us </span></button>
+          <button class="nav-item2"><span>Careers </span></button>
+          <button class="nav-item2-selected"><span>Apply Now &nbsp;&nbsp;&nbsp;&nbsp;&raquo;</span></button>
+          <button class="nav-item2"><span>Contact Us </span></button>
+				<hr class="nav-hr">
+          <button class="nav-item"><span>LOG IN </span></button>
+          <button class="nav-item"><span>SIGN UP </span></button>					
+      </nav>
+
+			
+			<!----survey form---->
+			<div class="side1"></div>
+			<div class="content">
+				<h2>Application Form</h2>
+				<section>
+					<p id="description">
+						Thank you for choosing our company. We can help you make more memories and experiences.
+					</p>
+					<BR /><BR />
+					<form id="survey-form" action="/myform/">
+						
+						<h3>Personal Information</h3>
+						<label class="frow" id="name-label">
+							<div class="fcol1">
+							Your Name:</div>
+							<div class="fcol2"><input type="text" id="name" class="form-text" placeholder="i.e. Datu Dimatulak" required>													
+								<span class="req"> *</span></div>
+						</label>
+						<label class="frow" id="number-label">
+							<div class="fcol1">
+							Phone Number:</div>
+							<div class="fcol2"><input id="number" type="number" class="form-text" min="1" max="999999999" placeholder="i.e. 09123456789" required>							
+								<span class="req"> *</span></div>							
+						</label>
+						<label class="frow" id="address-label">
+							<div class="fcol1">
+							Address:</div>
+							<div class="fcol2"><input id="email" type="email" class="form-text" placeholder="i.e. Apt. Number, Street, Avenue, Barangay, City, Country" required>
+								<span class="req"> *</span></div>
+						</label>
+						<label class="frow" id="email-label">
+							<div class="fcol1">
+							Email Address:</div>
+							<div class="fcol2"><input id="email" type="email" class="form-text" placeholder="i.e. datudimatulak@gmail.com" required>
+								<span class="req"> *</span></div>
+						</label>							
+							
+						<hr class="sep">
+						<h3>Professional Skills</h3>
+						<p>
+						Please rate your skills in each of the following categories:
+						</p>
+						<BR /><BR />
+						<div class="frow" id="computer-proficiency">
+							<div class="fcol1">
+								Computer Proficiency
+							</div>
+							<div class="fcol2">
+								<label class="rlabel" for="comprof-e"><input type="radio" id="comprof-e" name="comprof" value="e"> 
+										<span class="radio"></span> Expert
+								</label>				
+								<label class="rlabel" for="comprof-i"><input type="radio" id="comprof-i" name="comprof" value="i"> 
+										<span class="radio"></span> Intermediate
+								</label>
+								<label class="rlabel" for="comprof-p"><input type="radio" id="comprof-p" name="comprof" value="p"> 
+										<span class="radio"></span> Proficient
+								</label>
+								<label class="rlabel" for="comprof-n"><input type="radio" id="comprof-n" name="comprof" value="n"> 
+										<span class="radio"></span> Novice
+								</label>
+							</div>
+						</div>
+						<div class="frow" id="software-proficiency">
+							<div class="fcol1">
+								Software Proficiency
+							</div>
+							<div class="fcol2">
+								<label class="rlabel" for="softprof-e"><input type="radio" id="softprof-e" name="softprof" value="e"> 
+										<span class="radio"></span> Expert
+								</label>				
+								<label class="rlabel" for="softprof-i"><input type="radio" id="softprof-i" name="softprof" value="i"> 
+										<span class="radio"></span> Intermediate
+								</label>
+								<label class="rlabel" for="softprof-p"><input type="radio" id="softprof-p" name="softprof" value="p"> 
+										<span class="radio"></span> Proficient
+								</label>
+								<label class="rlabel" for="softprof-n"><input type="radio" id="softprof-n" name="softprof" value="n"> 
+										<span class="radio"></span> Novice
+								</label>
+							</div>
+						</div>
+						<div class="frow" id="coding">
+							<div class="fcol1">
+								Coding
+							</div>
+							<div class="fcol2">
+								<label class="rlabel" for="code-e"><input type="radio" id="code-e" name="code" value="e"> 
+										<span class="radio"></span> Expert
+								</label>				
+								<label class="rlabel" for="code-i"><input type="radio" id="code-i" name="code" value="i"> 
+										<span class="radio"></span> Intermediate
+								</label>
+								<label class="rlabel" for="code-p"><input type="radio" id="code-p" name="code" value="p"> 
+										<span class="radio"></span> Proficient
+								</label>
+								<label class="rlabel" for="code-n"><input type="radio" id="code-n" name="code" value="n"> 
+										<span class="radio"></span> Novice
+								</label>
+							</div>
+						</div>
+						<div class="frow" id="time-management">
+							<div class="fcol1">
+								Time Management
+							</div>
+							<div class="fcol2">
+								<label class="rlabel" for="timeman-e"><input type="radio" id="timeman-e" name="timeman" value="e"> 
+										<span class="radio"></span> Expert
+								</label>				
+								<label class="rlabel" for="timeman-i"><input type="radio" id="timeman-i" name="timeman" value="i"> 
+										<span class="radio"></span> Intermediate
+								</label>
+								<label class="rlabel" for="timeman-p"><input type="radio" id="timeman-p" name="timeman" value="p"> 
+										<span class="radio"></span> Proficient
+								</label>
+								<label class="rlabel" for="timeman-n"><input type="radio" id="timeman-n" name="timeman" value="n"> 
+										<span class="radio"></span> Novice
+								</label>
+							</div>
+						</div>
+							
+						<hr class="sep">
+						<h3>Educational Attainment</h3>
+						<p>What is your highest educational attainment?</p>
+						<BR /><BR />
+						<div class="frow" id="college">
+							<div class="fcol1">
+								College
+							</div>
+							<div class="fcol2">
+								<label class="rlabel" for="college-g"><input type="radio" id="college-g" name="college" value="Graduate"> 
+										<span class="checkmark"></span> Graduate
+								</label>				
+								<label class="rlabel" for="college-u"><input type="radio" id="college-u" name="college" value="Undergraduate"> 
+										<span class="checkmark"></span> Undergraduate
+								</label>
+								<label class="rlabel" for="college-tn"><input type="radio" id="college-tn" name="college" value="Not Taken"> 
+										<span class="checkmark"></span> Not Taken
+								</label>
+							</div>
+						</div>		
+						<BR />
+						<div class="frow" id="preference-comments">
+							<div class="fcol1 for-textarea">
+								What school are you from?
+							</div>
+							<div class="fcol2">
+								<textarea class="form-textarea" style="align-self:flex-start;" cols="" rows=""> </textarea>
+							</div>
+						</div>
+						<BR /><BR />
+						<div class="frow" id="postcal">
+							<div class="fcol1">
+								Post-College Degree
+							</div>
+							<div class="fcol2">
+								<label class="rlabel" for="postcal-d"><input type="radio" id="postcal-d" name="postcal" value="Doctorate"> 
+										<span class="checkmark"></span> Doctorate
+								</label>
+								<label class="rlabel" for="postcal-m"><input type="radio" id="postcal-m" name="postcal" value="Masteral"> 
+										<span class="checkmark"></span> Masteral
+								</label>				
+								<label class="rlabel" for="postcal-b"><input type="radio" id="postcal-b" name="postcal" value="Bachelor"> 
+										<span class="checkmark"></span> Bachelor
+								</label>
+								<label class="rlabel" for="postcal-a"><input type="radio" id="postcal-a" name="postcal" value="Associate"> 
+										<span class="checkmark"></span> Associate
+								</label>
+								<label class="rlabel" for="postcal-nt"><input type="radio" id="postcal-nt" name="postcal" value="Not Taken"> 
+										<span class="checkmark"></span> Not Taken
+								</label>
+							</div>
+						</div>
+						<BR />
+						<div class="frow" id="postcalschool">
+							<div class="fcol1 for-textarea">
+								What school are you from?
+							</div>
+							<div class="fcol2">
+								<textarea class="form-textarea" style="align-self:flex-start;" cols="" rows=""> </textarea>
+							</div>
+						</div>
+
+							
+						<hr class="sep">
+						<h3>Quick Assessment</h3>
+						<BR /><BR />
+						<div class="frow" id="why">
+							<div class="fcol1 for-textarea">
+								Why should we hire you?
+							</div>
+							<div class="fcol2">
+								<textarea class="form-textarea" name="feedback" cols="" rows=""> </textarea>
+							</div>
+						</div>
+						<BR /><BR />
+						<div class="frow" id="position">
+							<div class="fcol1">
+								Please pick the position you are applying: 
+							</div>
+							<div class="fcol2">
+								<select class="select" id="dropdown" name="position">
+									<option value="select">Select &cudarrl;</option>
+									<option value="Yes, with my name">Software Engineer</option>
+									<option value="Yes, anonymous">Project Manager</option>
+									<option value="No">Accountant</option>
+								</select>
+							</div>
+						</div>
+						<BR /><BR /><BR />
+						<div class="frow"><input type="submit" id="submit" class="submit" value="Submit Application"></div>
+						<BR /><BR /><BR />
+
+					</form>
+				</section>
+			</div>
+			<div class="side2"></div>	
+  	</div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+@media screen and (max-width: 500px) {
+	body {
+    font-size: 12pt;
+  }
+  .footer-text {
+    font-size: .75rem;
+  }
+  .fdiv{
+    display: block;
+  }
+  .lines {
+    display: none;
+  }
+	.frow { flex-direction: column; }
+	.for-textarea { align-self: center; }
+}
+@media screen and (max-width: 600px) {
+  .footer-text { font-size: .75rem; }
+}
+@media screen and (max-width: 700px) {
+  .fdiv { display: block; }
+  .lines { display: none; }
+	#login, #signup { display: none; }
+	.menu { display: block; }
+	.rlabel { display: block; }
+	.fcol1, .fcol2, .frow { width: 90vw; }
+  #title {
+    font-size: 1.25rem;
+	}
+	.nav {
+		grid-column: span 4;
+		grid-row: 4;
+		width: 100%;
+	}
+	.content { padding-left: 20px; padding-right: 20px;}
+	footer {
+		grid-row: 5;
+	}
+}

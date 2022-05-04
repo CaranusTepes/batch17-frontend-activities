@@ -1,0 +1,24 @@
+$backcol: #E0F7FA;
+$normalcol: black;
+$font: 'Quicksand', sans-serif;
+$font1: Roboto, sans-serif, san-serif;
+
+html, body {
+    background-color: $backcol;
+    color: $normalcol;
+    margin: 0px;
+    font-family: $font;
+    font-size: 16px;
+    height: 100%;
+  }
+  
+  .container {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 5vw 5vw minmax(1fr, 800px) 10vw;
+      grid-template-rows: 10vh auto 50px;
+      padding: 0px;
+    background: $backcol;
+    font-size: 1rem;
+    font-family: $font1;
+  }

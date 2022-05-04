@@ -1,0 +1,87 @@
+@mixin formss ($vw) {
+	font-family: 'Quicksand', sans-serif;
+	border: 0px;
+	padding: 10px;
+	border-radius: 15px;
+  	box-shadow: 1px 1px 5px #90ABA9;
+	width: 40vw;
+	min-width: 200px;
+	max-width: 400px;
+}
+
+.form-text {
+	@include formss (40vw);
+	
+}
+.form-textarea {
+	font-family: 'Quicksand', sans-serif;
+	border: 0px;
+	padding: 10px;
+	border-radius: 15px;
+  box-shadow: 1px 1px 5px #90ABA9;
+	width: 60vw;
+	min-width: 200px;
+	max-width: 600px;
+	min-height: 100px;
+	vertical-align: top;
+}
+.for-textarea {
+	align-self: flex-start;
+}
+
+.rlabel {
+  display: inline;
+  position: relative;
+  padding-left: 24px;
+	padding-right: 10px;
+	margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: .76rem;
+}
+
+.rlabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio {
+  position: absolute;
+  top: -20;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+	box-shadow: 1px 1px 5px #90ABA9;
+}
+
+.rlabel:hover input ~ .radio {
+  background-color: #ccc;
+}
+
+.rlabel input:checked ~ .radio {
+  background-color: #fff;
+}
+
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.rlabel input:checked ~ .radio:after {
+  display: block;
+}
+
+.rlabel .radio:after {
+ 	top: 4px;
+	left: 4px;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: #00ACC1;
+	box-shadow: 1px 1px 2px #fff inset;
+
+}

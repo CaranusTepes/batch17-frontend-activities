@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images5.alphacoders.com/112/1124865.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+}
+
+.board {
+  border: 1px solid;
+  height: 550px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 8px 8px rgb(0 0 0 / 65%);
+
+}
+
+.db {
+  background: #5C4033;
+}
+
+.lb {
+  background:#C4A484;
+}
+
+.box {
+  height: 68.5px;
+  width: 68.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  cursor: pointer;
+
+}

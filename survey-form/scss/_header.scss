@@ -1,0 +1,66 @@
+$backone: #fff;
+$backtwo: #00838F;
+$backthree: #00ACC1;
+$backfour: #006064;
+$font: 'Quicksand', sans-serif;
+$trans: uppercase;
+$shadow: 0px 2px 15px #666;
+
+
+header {
+	grid-column: span 4;
+	grid-row: 1;
+	display: flex;
+	flex-direction: row;
+	max-height: 100px;
+	min-height: 50px;
+  width: 100%;
+  border: 0px;
+  box-shadow: $shadow;
+  background: $backone;
+  align-items: center;
+	z-index: 1;
+}
+
+#title {
+  font-family: $font;
+  text-transform: $trans;
+  flex-grow: 1;
+	padding-left: 5px;
+	font-size: 3vw;
+  font-weight: bold;
+}
+
+.login {
+  align-self: right;
+  font-family: $font;
+  text-transform: $trans;
+  font-size: 1rem;
+  padding-right: 20px;
+  border: 0;
+  background: 0;
+}
+
+.login:hover {
+  color: $backtwo;
+  cursor: pointer;
+}
+
+.signup {
+  align-self: right;
+  font-family: $font;
+  text-transform: $trans;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $backone;
+  margin-right: 20px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  background-color: $backthree;
+}
+
+.signup:hover {
+  background-color: $backfour;
+  cursor: pointer;
+}
