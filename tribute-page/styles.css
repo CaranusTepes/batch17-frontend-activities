@@ -1,0 +1,398 @@
+
+   
+   * {
+     margin: 0px;
+    }
+   
+   .first-box {
+     background-color: black;
+     padding-left: clamp(1.5rem, 7vw, 7rem);
+     padding-right: clamp(1.5rem, 7vw, 7rem);
+     padding-bottom: clamp(1.5rem, 7vw, 7rem);
+     padding-top: clamp(3.5rem, 7vw, 7rem);
+   }
+   
+   .second-box {
+     font-family: 'Open Sans';
+     color: white;
+     background-color: rgb(212, 156, 14);
+     padding-left: clamp(1.5rem, 7vw, 7rem);
+     padding-right: clamp(1.5rem, 7vw, 7rem);
+     padding-top: clamp(1.5rem, 7vw, 3rem);
+     padding-bottom: clamp(1.5rem, 7vw, 3rem);
+     line-height: 2rem;
+     margin-top: clamp(-2.5rem, 30vw, -4rem);
+     position: relative;
+     z-index: 0;
+   }
+   
+   .third-box {
+     background-color: lightgray;
+     position: relative;
+     padding-left: clamp(1.5rem, 7vw, 7rem);
+     padding-right: clamp(1.5rem, 7vw, 7rem);
+     padding-top: clamp(1.5rem, 7vw, 3rem);
+     padding-bottom: clamp(1.5rem, 7vw, 3rem);
+     height: auto;
+     
+   }
+   
+   .fourth-box {
+     font-family: 'Open Sans';
+     padding: clamp(2rem, 7vw, 7rem);
+     text-align:  center;
+     background-color: lightgray;
+     display: flex;
+     flex-direction: column;
+     align-items: space-between;
+     justify-content: center;
+     margin-top: clamp(-4.15rem, 70vw, -7rem);
+     position: relative;
+   }
+   
+   .fifth-box {
+     background-color: rgb(212, 156, 14);
+     color: white;
+     padding-left: clamp(1.5rem, 7vw, 7rem);
+     padding-right: clamp(1.5rem, 7vw, 7rem);
+     padding-top: clamp(1.5rem, 7vw, 3rem);
+     padding-bottom: clamp(1.5rem, 7vw, 3rem);
+   }
+  
+   .sources {
+    background-color: lightgray;
+    padding: 1rem 1rem; 
+    margin-top: clamp(-2.5rem, 30vw, -4rem);
+    position: relative;
+    padding-left: clamp(1.5rem, 7vw, 3rem);
+    padding-right: clamp(1.5rem, 7vw, 3rem);
+  
+   }
+   footer {
+     font-family: 'Bebas Neue';
+     color: darkgoldenrod;
+     text-align: center;
+     background-color: black;
+     padding: 1rem 1rem;
+   }
+   
+   #image {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+   
+   #one {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   }
+   
+   #two {
+     width: 50%;
+     display: block;
+     margin-left: auto;
+   }
+   
+  #title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    font-size: clamp(9.75rem, 30vw, 12rem);
+    line-height: 0.85;
+    color: darkgoldenrod;
+    
+   }
+  
+  #img-caption { 
+    font-family: 'Open Sans';
+    color: white;  
+    font-size: clamp(1rem, 20vw, 1.15rem);
+   }
+   
+  #rd-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    color: darkgoldenrod;
+    text-align: center;
+   }
+   
+  .facts-content {
+    font-family: 'Open Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    line-height: 2rem;
+   }
+  
+  .fourth-box h2 {
+     font-family: 'Bebas Neue';
+     color: darkgreen;
+     font-family: 'Bebas Neue';
+     font-weight: 200;
+     margin-bottom: 1rem;
+     
+   }
+  
+  .fourth-box h4 {
+     font-family: 'Bebas Neue';
+     color: black;
+     font-size: clamp(3rem, 20vw, 4rem);
+     font-weight: 100;
+     line-height: 5rem;
+   }
+  
+  .fourth-container h5 {
+    font-family: 'Bebas Neue';
+    font-size: clamp(2.5rem, 10vw, 3rem);
+    font-weight: 100;
+    color: lightgoldenrodyellow;
+    line-height: 3rem;
+   }
+   
+  blockquote p {
+     font-family: 'Open Sans';
+     position: relative;
+     font-style: italic;
+     font-weight: lighter !important;
+     line-height: 1.75rem;
+   }
+  
+  cite {
+     font-family: 'Open Sans';
+   }
+  
+  .support {
+     font-family: 'Bebas Neue';
+     text-align: flex-start;
+     text-shadow: 0px 2px gray;
+     font-size: 1.25rem;
+   }
+  
+  .sources p {
+     font-family: 'Bebas Neue';
+     color: darkgoldenrod;
+   }
+  
+  #source-color {
+    color: darkgreen;
+    text-decoration: none;
+    font-family: 'Open Sans';
+     font-weight: lighter !important;
+   
+   }
+
+   .flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(212, 156, 14);
+    color: white; 
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+  }
+      
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+      
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+   
+  @media (min-width: 350px) and (max-width: 549px) {
+  
+    #image {
+    width: clamp(320px, 100vw, 60%);
+    }
+    
+    #one {
+    width: clamp(370px, 70vw, 80%);
+    }
+   
+    #two {
+      width: clamp(340px, 80vw, 100%);
+      margin-left: -0.5rem;
+    }
+  
+  }
+   
+  @media (min-width: 550px) and (max-width: 990px) {
+  
+    .second-box {
+     margin-top: clamp(-4.35rem, 100vw, -7rem);
+    }
+  
+    #image {
+     width: clamp(450px, 50vw, 75%);
+    }
+  
+   .third-box {
+    padding-left: clamp(4rem, 50vw, 6.5rem);
+    padding-right: clamp(4rem, 50vw, 6.5rem);
+    }
+  
+    .fourth-box {
+      margin-top: clamp(-6.25rem, 70vw, -9rem);
+    
+      }
+   .third-box img {
+    width: clamp(550px, 70vw, 80%);
+    margin-left: clamp(-8rem, 50vw, -10rem);
+    }
+  
+  
+   #one {
+    width: clamp(370px, 80vw, 100%);
+      
+    }
+    .sources {
+      margin-top: clamp(-3.25rem, 30vw, -4rem);
+    }
+  
+    .sources p{
+      font-size: 1.15rem;
+    }
+  
+    .footer p {
+      font-size: 1.15rem;
+    }
+  }
+  
+  
+  
+  @media (min-width: 991px) {
+  
+  
+    .first-box {
+      position: relative;
+    }
+  
+    #title {
+      position: absolute;
+      z-index: 2;
+    }
+  
+    #image {
+      width: 65%;
+      position: relative;
+      z-index: 0;
+      margin-top: 4rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  
+    #img-caption{
+      position: absolute;
+      z-index: 1;
+      margin-top: 20rem;
+      width: clamp(35%, 40vw, 45%);
+    }
+  
+    #img-caption {
+      width: clamp(25%, 7vw, 100%) ;
+    }
+    
+    
+    .second-box {
+      margin-top: clamp(-6.90rem, 50vw, -9rem);
+      line-height: 2.30rem;
+    }
+    
+    .third-container {
+      padding-left: clamp(5rem, 50vw, 15rem);
+      padding-right: clamp(5rem, 50vw, 15rem);
+      line-height: 2.5rem;
+    }
+  
+    .third-container img {
+      margin-left: clamp(-15rem, 50vw, -20rem);
+      width:  clamp(750px, 70vw, 70%);
+    }
+    
+  
+    .third-container h2 {
+      font-size: clamp(1.75rem, 80vw, 2rem);
+    }
+    .third-container h3 {
+      font-size: clamp(1rem, 20vw, 1.25rem);
+      
+    }
+   
+     .fourth-container {
+      margin-top: clamp(-8rem, 100vw, -9.5rem);
+      padding-top: 2.5rem;
+    }
+    
+    .fourth-container p {
+      font-size: 1.15rem;
+      line-height: 1.75rem;
+      
+    }
+  
+    .fourth-container h4 {
+      font-size: 4.5rem;
+      line-height: 3rem;
+   
+    }
+  
+    .fourth-container h2 {
+      padding-left: 10rem;
+      padding-right: 6rem;
+      font-size: 2rem;
+     }
+      
+    .numbers {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      position: relative;
+      padding-top: 3rem;
+     }
+   
+    .fifth-container {
+      display: flex !important;
+      flex-direction: row;
+      position: relative;
+      font-size: 1.15rem;
+    }
+    
+    .fifth-container img {
+      width: clamp(440px, 100vw, 100%);
+      justify-content: flex-end;
+      margin-top: max(3rem, 1rem);
+      
+    }
+    .sources {
+      margin-top: clamp(-3.25rem, 30vw, -4rem);
+      line-height: 1.5rem;
+  
+    }
+  
+    .sources p {
+      font-size: 1.25rem;
+      line-height: 1.30rem;
+    }
+  
+    footer p {
+      font-size: 1.15rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  @media screen and (max-width: 730px) {
+    #title {
+      font-size: 50px;
+    }
+}
+  
+@media (max-width: 800px) {
+  .flex-container {
+      flex-direction: column;
+  }
+}
